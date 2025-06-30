@@ -34,7 +34,7 @@ public class Porudzbina implements Serializable{
 	private List<StavkaPorudzbine> stavke;
 	
 	@ManyToOne
-	@JoinColumn
+	@JoinColumn(name = "dobavljac")
 	private Dobavljac dobavljac;
 	
 	
