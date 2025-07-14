@@ -2,6 +2,8 @@ package rva.models;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,10 +31,12 @@ public class StavkaPorudzbine implements Serializable{
 	
 	@ManyToOne
 	@JoinColumn(name = "artikl")
+	@JsonIgnore
 	private Artikl artikl;
 	
 	@ManyToOne
 	@JoinColumn(name = "porudzbina")
+	@JsonIgnore
 	private Porudzbina porudzbina;
 	
 	

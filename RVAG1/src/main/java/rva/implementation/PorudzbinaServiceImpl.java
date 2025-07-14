@@ -4,12 +4,14 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import rva.models.Dobavljac;
 import rva.models.Porudzbina;
 import rva.repository.PorudzbinaRepository;
 import rva.services.PorudzbinaService;
 
+@Component
 public class PorudzbinaServiceImpl implements PorudzbinaService{
 
 	@Autowired
@@ -23,6 +25,11 @@ public class PorudzbinaServiceImpl implements PorudzbinaService{
 	@Override
 	public boolean existsById(int id) {
 		return repo.existsById(id);
+	}
+	
+	@Override
+	public Optional<Porudzbina> findById(int id){
+		return repo.findById(id);
 	}
 
 	@Override
