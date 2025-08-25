@@ -31,12 +31,10 @@ public class StavkaPorudzbine implements Serializable{
 	
 	@ManyToOne
 	@JoinColumn(name = "artikl")
-	@JsonIgnore
 	private Artikl artikl;
 	
 	@ManyToOne
 	@JoinColumn(name = "porudzbina")
-	@JsonIgnore
 	private Porudzbina porudzbina;
 	
 	

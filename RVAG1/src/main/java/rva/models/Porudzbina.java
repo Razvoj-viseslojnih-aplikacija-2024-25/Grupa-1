@@ -33,11 +33,11 @@ public class Porudzbina implements Serializable{
 	private boolean placeno;
 	
 	@OneToMany(mappedBy = "porudzbina")
+	@JsonIgnore
 	private List<StavkaPorudzbine> stavke;
 	
 	@ManyToOne
 	@JoinColumn(name = "dobavljac")
-	@JsonIgnore
 	private Dobavljac dobavljac;
 	
 	
