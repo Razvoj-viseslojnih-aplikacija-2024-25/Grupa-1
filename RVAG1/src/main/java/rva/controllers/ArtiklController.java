@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import rva.implementation.ArtiklServiceImpl;
 import rva.models.Artikl;
 
+@CrossOrigin
 @RestController
 public class ArtiklController {
 	

@@ -22,6 +22,7 @@ import rva.models.Artikl;
 import rva.models.Porudzbina;
 import rva.models.StavkaPorudzbine;
 
+@CrossOrigin
 @RestController
 public class StavkaPorudzbineController {
 

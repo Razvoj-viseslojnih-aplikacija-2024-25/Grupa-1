@@ -20,6 +20,7 @@ import rva.implementation.PorudzbinaServiceImpl;
 import rva.models.Dobavljac;
 import rva.models.Porudzbina;
 
+@CrossOrigin
 @RestController
 public class PorudzbinaController {
 

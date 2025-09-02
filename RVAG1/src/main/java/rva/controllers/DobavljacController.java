@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import rva.implementation.DobavljacServiceImpl;
 import rva.models.Dobavljac;
 
+@CrossOrigin
 @RestController
 public class DobavljacController {
 
