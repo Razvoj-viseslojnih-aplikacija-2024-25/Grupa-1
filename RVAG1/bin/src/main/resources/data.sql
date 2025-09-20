@@ -12,13 +12,13 @@ values (nextval('dobavljac_seq'), 'Heraeus', '381 111 111', 'Bulevar oslobodjenj
 
 insert into porudzbina (id, datum, isporuceno, dobavljac, iznos, placeno)
 values (nextval('porudzbina_seq'),to_date('01.03.2025.', 'dd.mm.yyyy.'),
-        to_date('05.03.2022.', 'dd.mm.yyyy.'), 1,80000,TRUE),
+        to_date('05.03.2025.', 'dd.mm.yyyy.'), 1,80000,TRUE),
         (nextval('porudzbina_seq'),to_date('08.02.2025.', 'dd.mm.yyyy.'),
-        to_date('01.03.2022.', 'dd.mm.yyyy.'), 2,1000,FALSE),
+        to_date('01.03.2025.', 'dd.mm.yyyy.'), 2,1000,FALSE),
         (nextval('porudzbina_seq'),to_date('01.01.2025.', 'dd.mm.yyyy.'),
-        to_date('05.05.2022.', 'dd.mm.yyyy.'), 3, 2500,TRUE),
+        to_date('05.05.2025.', 'dd.mm.yyyy.'), 3, 2500,TRUE),
         (nextval('porudzbina_seq'),to_date('01.03.2025.', 'dd.mm.yyyy.'),
-        to_date('05.03.2022.', 'dd.mm.yyyy.'), 4,3000,FALSE);
+        to_date('05.03.2025.', 'dd.mm.yyyy.'), 4,3000,FALSE);
 
 insert into stavka_porudzbine(id,redni_broj,kolicina,jedinica_mere,cena,artikl,porudzbina)
 values (nextval('stavka_porudzbine_seq'), 1, 1, 'komad', 80000, 1, 1),
