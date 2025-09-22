@@ -52,14 +52,25 @@
 
     <div class="form">
       <mat-form-field>
-        <input
+        <mat-select
           matInput
           placeholder="Placeno"
           name="placeno"
           [disabled]="flag == 3"
           [(ngModel)]="data.placeno"
           required
-        />
+        >
+          <mat-option [value]="true"> Da </mat-option>
+          <mat-option [value]="false"> Ne </mat-option>
+        </mat-select>
+        <!-- <input
+          matInput
+          placeholder="Placeno"
+          name="placeno"
+          [disabled]="flag == 3"
+          [(ngModel)]="data.placeno"
+          required
+        /> -->
       </mat-form-field>
     </div>
 

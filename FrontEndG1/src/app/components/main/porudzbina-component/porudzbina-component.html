@@ -31,7 +31,7 @@
     <!-- Placeno -->
     <ng-container matColumnDef="placeno">
       <th mat-header-cell *matHeaderCellDef>Placeno</th>
-      <td mat-cell *matCellDef="let row">{{ row.placeno }}</td>
+      <td mat-cell *matCellDef="let row">{{ row.placeno ? 'Da' : 'Ne' }}</td>
     </ng-container>
 
     <!-- Dobavljac -->
